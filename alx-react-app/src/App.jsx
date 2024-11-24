@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from 'react';
-import UserProfile from './components/UserProfile'; // Import the UserProfile component
+import UserProfile from '../../alx-react-app-new/src/components/UserProfile'; // Import the UserProfile component
 
 function App() {
   return (
