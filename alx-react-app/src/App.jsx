@@ -1,17 +1,21 @@
 // src/App.jsx
 import React from 'react';
-import WelcomeMessage from './components/WelcomeMessage';  // Import the new component
-import MainContent from './components/MainContent';
-import Footer from './components/Footer';
-import Header from './components/Header';
+import UserProfile from './components/UserProfile'; // Import the UserProfile component
 
 function App() {
   return (
     <div className="App">
-      <MainContent />
-      <Footer />
-      <Header />
-      <WelcomeMessage />  {/* Include the new component here */}
+      {/* Use the UserProfile component and pass props */}
+      <UserProfile 
+        name="Alice" 
+        age="25" 
+        bio="Loves hiking and photography" 
+      />
+      <UserProfile 
+        name="Bob" 
+        age="30" 
+        bio="Enjoys traveling and reading" 
+      />
     </div>
   );
 }
