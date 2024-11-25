@@ -1,21 +1,12 @@
 // src/App.jsx
-import React from 'react';
-import UserProfile from '../../alx-react-app-new/src/components/UserProfile'; // Import the UserProfile component
+import React from 'react';          // Import React (needed for JSX)
+import Counter from './components/Counter';  // Import the Counter component
 
 function App() {
   return (
     <div className="App">
-      {/* Use the UserProfile component and pass props */}
-      <UserProfile 
-        name="Alice" 
-        age="25" 
-        bio="Loves hiking and photography" 
-      />
-      <UserProfile 
-        name="Bob" 
-        age="30" 
-        bio="Enjoys traveling and reading" 
-      />
+      {/* Render the Counter component here */}
+      <Counter />
     </div>
   );
 }
