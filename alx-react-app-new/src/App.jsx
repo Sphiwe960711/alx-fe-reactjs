@@ -1,13 +1,15 @@
 // src/App.jsx
-import React from 'react';               // Import React
-import Counter from './components/Counter';  // Import the Counter component
+import React from 'react';
+import ProfilePage from './ProfilePage';
+import { UserContext } from './UserContext'; // Import UserContext
 
 function App() {
+  const userData = { name: "Jane Doe", email: "jane.doe@example.com" };
+
   return (
-    <div className="App">
-      {/* Use the Counter component here */}
-      <Counter />
-    </div>
+    <UserContext.Provider value={userData}> {/* Provide the context */}
+      <ProfilePage />
+    </UserContext.Provider>
   );
 }
 
