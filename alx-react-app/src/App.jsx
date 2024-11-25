@@ -1,11 +1,11 @@
 // src/App.jsx
-import React from 'react';          // Import React (needed for JSX)
+import React from 'react';               // Import React
 import Counter from './components/Counter';  // Import the Counter component
 
 function App() {
   return (
     <div className="App">
-      {/* Render the Counter component here */}
+      {/* Use the Counter component here */}
       <Counter />
     </div>
   );
