@@ -1,24 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './components/Header'
-import UserProfile from './components/UserProfile'
-import MainContent from './components/MainContent'
-import Footer from './components/Footer'
+// src/App.jsx
+import React from 'react';               // Import React
+import Counter from './components/Counter';  // Import the Counter component
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    
-<div>
-  <Header />
-  <UserProfile />
-  <MainContent />
-  <Footer />
-</div>
-  )
+    <div className="App">
+      {/* Use the Counter component here */}
+      <Counter />
+    </div>
+  );
 }
 
-export default App
+export default App;
