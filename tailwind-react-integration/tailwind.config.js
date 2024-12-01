@@ -1,12 +1,12 @@
 module.exports = {
-  content: ['./src/**/*.{html,js,ts,jsx,tsx}'], // specify files to scan for classes
-  darkMode: 'class', // can also use 'media' for default system-based dark mode
+  content: ['./src/**/*.{html,js,ts,jsx,tsx}'],  // Specify paths for class usage
+  darkMode: 'class', // Optional: Use 'class' strategy or 'media' for system-based dark mode
   theme: {
     extend: {
-      // Custom theme settings
+      // Custom theme extensions (e.g., colors, spacing, etc.)
     },
   },
   plugins: [
-    // any custom plugins
+    // Add custom Tailwind plugins if necessary
   ],
 };
