@@ -1,5 +1,11 @@
 module.exports = {
-  content: ['./src/**/*.{html,js,ts,jsx,tsx}'],  // Specify paths for class usage
+  purge: ['./src/**/*.{html,js}'],
+  variants: {
+    extend: {
+      backgroundColor: ['active'],
+    },
+  },
+
   darkMode: 'class', // Optional: Use 'class' strategy or 'media' for system-based dark mode
   theme: {
     extend: {
