@@ -1,10 +1,4 @@
-// tailwind.config.js
-module.exports = {
-  content: [
-    "./src/**/*.{html,js,ts,jsx,tsx}", // Adjust this path based on your file structure
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+/* src/styles/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
